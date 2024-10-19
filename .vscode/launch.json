@@ -1,0 +1,51 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "AService Debug",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "dotnet: build",
+            "program": "${workspaceFolder}/Services/UserQueueManager.AService/bin/Debug/net8.0/UserQueueManager.AService.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,            
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:8011"
+            }
+        },
+        {
+            "name": "BService Debug",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "dotnet: build",
+            "program": "${workspaceFolder}/Services/UserQueueManager.BService/bin/Debug/net8.0/UserQueueManager.BService.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,            
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:8016"
+            }
+        },
+        {
+            "name": "C#: Orchestrator Debug",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/Services/UserQueueManager.Orchestrator/bin/Debug/net8.0/UserQueueManager.Orchestrator.dll",
+            "preLaunchTask": "dotnet: build",
+             "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:8001"
+            }      
+                
+        }
+    ]
+}
