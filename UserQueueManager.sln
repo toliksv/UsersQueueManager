@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{FB8D3A20-619F-43CD-964C-FA420DA91813}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7A1DAFAF-2184-48A3-9AE1-F9A5C1DC902A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{656C4B27-C6DE-4C44-A4DC-5424F59FA9F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserQueueManager.Contracts", "Core\UserQueueManager.Contracts\UserQueueManager.Contracts.csproj", "{3299FDD4-6492-4803-9605-760C583E1FE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserQueueManager.Core", "Core\UserQueueManager.Core\UserQueueManager.Core.csproj", "{5ACCC7FD-49F6-43C0-AE15-136D7B1D9738}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserQueueManager.AService", "Services\UserQueueManager.AService\UserQueueManager.AService.csproj", "{A4A46EE8-84F8-49C6-B37E-A2E054749D75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserQueueManager.BService", "Services\UserQueueManager.BService\UserQueueManager.BService.csproj", "{B3223F15-2F6B-4096-9559-A1F437F39637}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserQueueManager.Orchestrator", "Services\UserQueueManager.Orchestrator\UserQueueManager.Orchestrator.csproj", "{B2A954BC-967F-4654-9878-61804BE585F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserQueueManager.FileRepository", "Infrastructure\UserQueueManager.FileRepository\UserQueueManager.FileRepository.csproj", "{F88C634A-369B-4C6B-A9D6-84A401D9ED93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0E052F11-168E-4331-8D3B-4C292AC4AB74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserQueueManager.Infrastructure.Tests", "Tests\UserQueueManager.Infrastructure.Tests\UserQueueManager.Infrastructure.Tests.csproj", "{FB22AF7C-C654-4A70-A8D4-B566A8443040}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserQueueManager.RemotePlatform", "Infrastructure\UserQueueManager.RemotePlatform\UserQueueManager.RemotePlatform.csproj", "{BDADD174-7F81-468F-AD7D-CC862E22FC9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3299FDD4-6492-4803-9605-760C583E1FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3299FDD4-6492-4803-9605-760C583E1FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3299FDD4-6492-4803-9605-760C583E1FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3299FDD4-6492-4803-9605-760C583E1FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ACCC7FD-49F6-43C0-AE15-136D7B1D9738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ACCC7FD-49F6-43C0-AE15-136D7B1D9738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ACCC7FD-49F6-43C0-AE15-136D7B1D9738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ACCC7FD-49F6-43C0-AE15-136D7B1D9738}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4A46EE8-84F8-49C6-B37E-A2E054749D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4A46EE8-84F8-49C6-B37E-A2E054749D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4A46EE8-84F8-49C6-B37E-A2E054749D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4A46EE8-84F8-49C6-B37E-A2E054749D75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3223F15-2F6B-4096-9559-A1F437F39637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3223F15-2F6B-4096-9559-A1F437F39637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3223F15-2F6B-4096-9559-A1F437F39637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3223F15-2F6B-4096-9559-A1F437F39637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2A954BC-967F-4654-9878-61804BE585F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A954BC-967F-4654-9878-61804BE585F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A954BC-967F-4654-9878-61804BE585F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A954BC-967F-4654-9878-61804BE585F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F88C634A-369B-4C6B-A9D6-84A401D9ED93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F88C634A-369B-4C6B-A9D6-84A401D9ED93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F88C634A-369B-4C6B-A9D6-84A401D9ED93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F88C634A-369B-4C6B-A9D6-84A401D9ED93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB22AF7C-C654-4A70-A8D4-B566A8443040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB22AF7C-C654-4A70-A8D4-B566A8443040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB22AF7C-C654-4A70-A8D4-B566A8443040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB22AF7C-C654-4A70-A8D4-B566A8443040}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDADD174-7F81-468F-AD7D-CC862E22FC9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDADD174-7F81-468F-AD7D-CC862E22FC9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDADD174-7F81-468F-AD7D-CC862E22FC9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDADD174-7F81-468F-AD7D-CC862E22FC9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3299FDD4-6492-4803-9605-760C583E1FE2} = {7A1DAFAF-2184-48A3-9AE1-F9A5C1DC902A}
+		{5ACCC7FD-49F6-43C0-AE15-136D7B1D9738} = {7A1DAFAF-2184-48A3-9AE1-F9A5C1DC902A}
+		{A4A46EE8-84F8-49C6-B37E-A2E054749D75} = {FB8D3A20-619F-43CD-964C-FA420DA91813}
+		{B3223F15-2F6B-4096-9559-A1F437F39637} = {FB8D3A20-619F-43CD-964C-FA420DA91813}
+		{B2A954BC-967F-4654-9878-61804BE585F5} = {FB8D3A20-619F-43CD-964C-FA420DA91813}
+		{F88C634A-369B-4C6B-A9D6-84A401D9ED93} = {656C4B27-C6DE-4C44-A4DC-5424F59FA9F6}
+		{FB22AF7C-C654-4A70-A8D4-B566A8443040} = {0E052F11-168E-4331-8D3B-4C292AC4AB74}
+		{BDADD174-7F81-468F-AD7D-CC862E22FC9D} = {656C4B27-C6DE-4C44-A4DC-5424F59FA9F6}
+	EndGlobalSection
+EndGlobal
